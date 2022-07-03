@@ -1,3 +1,22 @@
 source ~/.vimrc
 
 command PT :action PinActiveTabToggle
+
+command SH :action SplitHorizontally
+command SV :action SplitVertically
+command MR :action MoveTabRight
+command ML :action MoveTabLeft
+
+command MO :action MoveEditorToOppositeTabGroup
+
+command COT :action CloseAllEditorsButActive
+command CAT :action CloseAllEditors
+
+map gh <Action>(ShowErrorDescription)
+map git <Action>(ShowIntentionActions)
+map gti <Action>(GotoImplementation)
+
+map gc <Nop>
+map gp <Nop>
+map gc <Action>($Copy)
+map gp <Action>($Paste)
