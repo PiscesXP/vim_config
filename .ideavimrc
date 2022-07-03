@@ -12,6 +12,9 @@ command MO :action MoveEditorToOppositeTabGroup
 command COT :action CloseAllEditorsButActive
 command CAT :action CloseAllEditors
 
+command GH :action Vcs.ShowTabbedFileHistory
+command GHS :action Vcs.ShowHistoryForBlock
+
 map gh <Action>(ShowErrorDescription)
 map git <Action>(ShowIntentionActions)
 map gti <Action>(GotoImplementation)
