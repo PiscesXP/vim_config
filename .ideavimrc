@@ -14,12 +14,19 @@ command CAT :action CloseAllEditors
 
 command GH :action Vcs.ShowTabbedFileHistory
 command GHS :action Vcs.ShowHistoryForBlock
+command GRS :action Git.Reset
 
 map gh <Action>(ShowErrorDescription)
 map git <Action>(ShowIntentionActions)
 map gti <Action>(GotoImplementation)
 
 map gc <Nop>
-map gp <Nop>
 map gc <Action>($Copy)
+map gp <Nop>
 map gp <Action>($Paste)
+
+map gpi <Action>(ParameterInfo)
+map ge <Nop>
+map get <Action>(ExpressionTypeInfo)
+map gqd <Action>(QuickJavaDoc)
+map gqt <Action>(QuickTypeDefinition)
